@@ -33,7 +33,7 @@ app.post('/', function (req, res) {
     const url = 'https://us20.api.mailchimp.com/3.0/lists/'+String(process.env.list_uid)+'?skip_merge_validation=true&skip_duplicate_check=true'
     options = {
         method: 'post',
-        auth: process.env.apikey
+        auth: String(process.env.apikey)
     }
     const request = https.request(url, options, function (response) {
 
