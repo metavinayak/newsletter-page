@@ -30,10 +30,10 @@ app.post('/', function (req, res) {
         ]
     };
     var json_data = JSON.stringify(data);
-    const url = 'https://us20.api.mailchimp.com/3.0/lists/'+String(process.env.list_uid)+'?skip_merge_validation=true&skip_duplicate_check=true'
+    const url = 'https://us20.api.mailchimp.com/3.0/lists/'+process.env.list_uid+'?skip_merge_validation=true&skip_duplicate_check=true'
     options = {
         method: 'post',
-        auth: String(process.env.apikey)
+        auth: process.env.apikey
     }
     const request = https.request(url, options, function (response) {
 
