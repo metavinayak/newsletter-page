@@ -1,0 +1,22 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "A project for newsletter subscription through mailchimp.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinayak",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metavinayak/newsletter-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metavinayak/newsletter-page/issues"
+  },
+  "homepage": "https://github.com/metavinayak/newsletter-page#readme",
+  "engines": {
+    "node": "14.x"
+  }
+}
