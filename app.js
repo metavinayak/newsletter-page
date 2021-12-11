@@ -14,11 +14,11 @@ app.post('/failure', function (req, res) {
 })
 
 app.post('/', function (req, res) {
-    var fname = req.body.fname;
-    var lname = req.body.lname;
-    var email = req.body.email;
+    let fname = req.body.fname;
+    let lname = req.body.lname;
+    let email = req.body.email;
 
-    var data = {
+    let data = {
         members: [{
             email_address: email,
             status: "subscribed",
@@ -29,7 +29,7 @@ app.post('/', function (req, res) {
         }
         ]
     };
-    var json_data = JSON.stringify(data);
+    let json_data = JSON.stringify(data);
     const url = 'https://us20.api.mailchimp.com/3.0/lists/'+process.env.list_uid+'?skip_merge_validation=true&skip_duplicate_check=true'
     options = {
         method: 'post',
